@@ -1,0 +1,2 @@
+host-url: http://localhost:8080/api/v3
+rs-body-json: src/test/resources/user_response_body.json
