@@ -1,6 +1,7 @@
 package com.n26.apitests.tests
 
 import io.restassured.path.json.JsonPath
+import spock.lang.Unroll
 
 import static com.n26.apitests.service.UserService.getSpecificUser
 import static com.n26.apitests.service.UserService.logoutUserCall
@@ -13,6 +14,7 @@ class UserSpec extends BaseSpec {
     final String RS_BODY_JSON = getValue("rs-body-json")
     final String USER_NAME = "user2"
 
+    @Unroll
     def "should return correct status code when calling user logout with #method method"() {
         when:
             def respose = logoutUserCall(method)
