@@ -42,7 +42,7 @@ The order of above-listed charters reflects also their prioritisation. I would s
 * Language -> Polish -> ‘Future recurring records’ option is not translated
 
 2. Accounts
-* Add + -> Negative balance is displayed in parenthesis, instead of minus sign  (screenshots)
+* Add + -> Negative balance is displayed in parenthesis, instead of minus sign
 * The keyboard  displayed in the New Transfer screen contains calculator options, which is unnecessary
 * The difference between transfer and account is not explained, there should be a tooltip
 * When the user opes the ‘add account’ screen (by tapping the + button), the keyword is displayed automatically, and then upon trying to add the new account with empty name, the error message is covered by the keyboard
