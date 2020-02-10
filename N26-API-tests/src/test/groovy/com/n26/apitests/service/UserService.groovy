@@ -9,6 +9,7 @@ class UserService extends BaseService {
 
     static def logoutUserCall(Method method) {
             given()
+                .log().all()
                 .contentType(JSON)
             .when()
                 .request(method, "$HOST_URL/user/logout")
@@ -19,10 +20,12 @@ class UserService extends BaseService {
 
     static def getSpecificUser(String userName) {
             given()
+                .log().all()
                 .accept(JSON)
             .when()
                 .get("$HOST_URL/user/$userName")
             .then()
+                .log().all()
                 .extract().response()
     }
 }
